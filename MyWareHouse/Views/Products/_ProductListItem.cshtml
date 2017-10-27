@@ -1,0 +1,21 @@
+﻿@model MyWareHouse.Controllers.ProductListItem
+<tr>
+<td>
+    @Html.DisplayFor(modelItem => modelItem.Name)
+</td>
+<td>
+    @Html.DisplayFor(modelItem => modelItem.Price)
+</td>
+<td>
+    @Html.DisplayFor(modelItem => modelItem.Catagory)
+</td>
+<td>
+    @Html.DisplayFor(modelItem => modelItem.Count)
+</td>
+<td>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Details", "Details", new { id = Model.Id }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+</td>
+    </tr>
+
